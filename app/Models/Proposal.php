@@ -11,4 +11,9 @@ class Proposal extends Model
 {
     /** @use HasFactory<ProposalFactory> */
     use HasFactory, softDeletes;
+
+    protected $fillable = [
+        'email',
+        'hours'
+    ];
 }
